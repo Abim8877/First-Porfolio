@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    color: rgb(71, 71, 231);
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-inline: 80px;
+    @media (width <= 768px) {
+    padding-right: 0px;    
+    }
+}
+nav > .nav-logo a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.943);
+    font-family: Trebuchet;
+    cursor: pointer;
+}
+
+/* nav > .nav-links{
+    position: relative;
+    height: 200px;
+    background-color: black;
+} */
+
+nav > .nav-links > .open-btn{
+    display: none;
+    @media( width <= 768px) {
+        display: block;
+        font-size: 30px;
+        padding-right: 40px;
+        cursor: pointer;
+    }
+} 
+nav > .nav-links > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    @media( width <= 768px) {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        overflow: hidden;
+        transition: all 0.7s;
+    }
+}
+nav > .nav-links ul li:hover{
+    cursor: pointer;
+    transition: ease-in-out 1s;
+    color: red;
+}
