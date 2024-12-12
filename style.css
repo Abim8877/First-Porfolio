@@ -10,10 +10,20 @@ a{
     text-decoration: none;
     color: black;
 }
-
+ul.links.open {
+    display: block;
+}
+ul.links.close {
+    display: none;
+}
 .active {
     color: rgb(71, 71, 231);
+    @media(width<=768px) {
+        color: white;
+    }
 }
+
+/* Navbar section */
 
 nav{
     overflow: hidden;
@@ -49,17 +59,16 @@ nav > .nav-links > .open-btn{
         cursor: pointer;
     }
 } 
-nav > .nav-links > ul{
+nav > .nav-links > ul.links{
     list-style-type: none;
     display: flex;
     gap: 3rem;
     @media( width <= 768px) {
-        display: block;
+        display: none;
         background-color: black;
         color: white;
         padding: 20px;
         position: absolute;
-        z-index: 1;
         top: 0;
         right: 0;
         height: 100%;
@@ -68,8 +77,29 @@ nav > .nav-links > ul{
         transition: all 0.7s;
     }
 }
-nav > .nav-links ul li:hover{
+nav > .nav-links > ul.links li:nth-child(2){
+    @media(width<=768px) {
+        margin-top: 10px;
+    }
+}
+nav > .nav-links > ul.links li:not(:first-child){
+    @media(width<=768px) {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+}
+nav > .nav-links ul.links li:hover{
     cursor: pointer;
     transition: ease-in-out 1s;
     color: red;
 }
+nav > .nav-links ul.links li.close-btn{
+    display: none;
+    @media (width <= 768px) {
+        display: block;
+        font-size: 25px;
+    }
+}
+
+/* Navbar section end here */
