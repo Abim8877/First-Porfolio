@@ -3,9 +3,6 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    overflow: hidden;
-}
 a{
     text-decoration: none;
     color: black;
@@ -33,7 +30,7 @@ nav{
     height: 80px;
     padding-inline: 80px;
     @media (width <= 768px) {
-    padding-right: 0px;    
+    padding-left: 10px;   
     }
 }
 nav > .nav-logo a{
@@ -55,7 +52,6 @@ nav > .nav-links > .open-btn{
     @media( width <= 768px) {
         display: block;
         font-size: 30px;
-        padding-right: 40px;
         cursor: pointer;
     }
 } 
@@ -110,12 +106,17 @@ nav > .nav-links ul.links li.close-btn{
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
+    @media( width <= 768px) {
+        padding-left: 10px; 
+        display: block;
+    }
 }
 .hero-image{
     height: 27rem;
     width: 23rem;
-    margin-right: 100px;
-    border-radius: 20%;
+    margin-right: 70px;
+    border-radius: 15%;
+    margin-top: 40px;
 }
 .hero-text{
     margin-top: 4rem;
@@ -136,7 +137,12 @@ nav > .nav-links ul.links li.close-btn{
     color: white;
     background-color:  rgb(0, 153, 255);
     border: none;
+    margin-top: 40px;
+}
+.hero-last-text{
+    margin-top: 40px;
 }
 i{
+    margin-top: 40px;
     width: 40px;
 }

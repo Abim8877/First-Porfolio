@@ -1,6 +1,6 @@
-const toggleOpen = document.querySelector('.open-btn');
-const toggleClose = document.querySelector('.close-btn');
-const toggleAll = document.querySelector('.links');
+const toggleOpen = document.querySelector('.open-btn')
+const toggleClose = document.querySelector('.close-btn')
+const toggleAll = document.querySelector('.links')
 
 toggleOpen.addEventListener('click', () => {
     toggleAll.classList.add('open');
@@ -11,3 +11,6 @@ toggleClose.addEventListener('click', () => {
     toggleAll.classList.remove('open');
 });
 
+// console.log(toggleAll)
+// var eat = "rsfcytd"
+// console.log(eat)
