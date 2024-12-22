@@ -34,8 +34,9 @@ nav{
     align-items: center;
     height: 80px;
     padding-inline: 80px;
-    @media (width <= 768px) {
-    padding-left: 10px;   
+    @media (width <= 768px) {   
+    display: flex;
+    justify-content: space-between;
     }
 }
 nav > .nav-logo a{
@@ -46,7 +47,7 @@ nav > .nav-logo a{
     cursor: pointer;
     @media (width <= 768px) {
         position: relative;
-        left: 70px;   
+        right: 70px;
     }
 }
 
@@ -62,8 +63,8 @@ nav > .nav-links > .open-btn{
         display: block;
         font-size: 30px;
         cursor: pointer;
-        /* position: relative; */
-        /* right: -50px; */
+        position: relative;
+        right: -50px;
     }
 } 
 nav > .nav-links > ul.links{
@@ -118,16 +119,20 @@ nav > .nav-links ul.links li.close-btn{
     justify-content: space-between;
     padding-top: 70px;
     @media( width <= 768px) {
-        /* padding-left: 10px;  */
+        padding-left: 10px; 
         display: block;
     }
 }
 .hero-image{
-    height: 30rem;
-    width: 23rem;
-    margin-right: 70px;
+    height: 35rem;
+    width: 25rem;
+    margin-right: 10px;
     border-radius: 25%;
     margin-top: 40px;
+    @media( width <= 768px) {
+        height: 35rem;
+        width: 22rem;
+    }
 }
 .hero-text{
     margin-top: 4rem;
@@ -157,6 +162,10 @@ nav > .nav-links ul.links li.close-btn{
     text-align: center;   
     margin-top: 15%;
     color: white;
+    @media( width <= 768px) {
+        position: relative;
+        right: 20px;
+    }
 }
 .sub-work{
     display: flex;
@@ -185,7 +194,9 @@ nav > .nav-links ul.links li.close-btn{
 .work-skill{
     background-color: rgb(0, 153, 255);
     padding: 25px 30px 25px 30px;
-    border-radius: 10%;     
+    border-radius: 30px;   
+    position: relative;
+    right: 45px;  
 }
 .skill-name{
     font-size: 30px;
