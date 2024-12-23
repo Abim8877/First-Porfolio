@@ -238,6 +238,9 @@ section > .heading{
     font-size: 50px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    @media ( width <= 768px) {
+        font-size: 30px;
+    }
 }
 hr{
     border: solid 1px rgb(0, 153, 255);
