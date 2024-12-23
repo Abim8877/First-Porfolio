@@ -229,9 +229,22 @@ section > .heading{
 
  /* work experience section start here */
 
+ .work-exp-bg{
+    background-color: aqua;
+    z-index: -1;
+    margin-top: -100px;
+    margin-inline: 40px;
+    @media ( width <= 768px) {
+        margin-top: -300px;
+    }
+ }
  .work-experience{
-    margin-top: 120px;
+    padding-top: 210px;
     padding-inline: 80px;
+    @media ( width <= 768px) {
+        padding-top: 450px;
+        padding-inline: 20px;
+    }
  }
 .exp-head{
     text-align: center;
@@ -249,6 +262,8 @@ hr{
     margin-bottom: 70px;
     @media ( width <= 768px) {
         margin-inline: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 .exp-major{
@@ -281,6 +296,181 @@ h3{
     }
 }
 .exp-location{
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+    @media ( width <= 768px) {
+        color: rgb(0, 153, 255);
+    }
+}
+span{
+    margin-right: 5px;
+}
+.date{
+    font-size: 18px;
+}
+.exp-text{
+    font-size: 20px;
+}
+
+/* work experience section ends here */
+
+/* experience time section start here */
+.experience-time-section{
+    margin-top: 100px;
+    padding-left: 80px;
+    @media ( width <= 768px) {
+        /* margin-top: -100px; */
+        padding-inline: 50px;
+    }
+}
+.experience-time{
+    display: flex;
+    justify-content: space-between;
+    @media ( width <= 768px) {
+        display: block;
+    }
+}
+.exp-time-text{
+    width: 35%;
+    @media ( width <= 768px) {
+        width: 100%;
+        padding-inline: -10px;
+    }
+}
+.time-text-head{
+    font-size: 40px;
+    font-weight: bold;
+}
+.time-text-text{
+    font-size: 20px;
+    @media ( width <= 768px) {
+        margin-top: 20px;
+    }
+}
+.time-text-btn{
+    width: 180px;
+    height: 70px;
+    border-radius: 40px;
+    padding-inline: 30px;
+    border: none;
+    background-color: rgb(0, 153, 255);
+    margin-top: 25px;
+}
+.exp-time-rate{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "num-sat success" "num-award review";
+    @media ( width <= 768px) {  
+        width: 100%;
+        margin-top: 70px;
+        row-gap: 30px;
+        column-gap: 40px;
+    }
+}
+.num-sat{
+    grid-area: num-sat;
+}
+.success{
+    grid-area: success;
+}
+.num-award{
+    grid-area: num-award;
+}
+.review{
+    grid-area: review;
+}
+.fig{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+    @media ( width <= 768px) {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+.fig-text{
+    font-size: 20px;
+    @media ( width <= 768px) {
+        font-size: 16px;
+    }
+}
+
+/* experience time section ends here */
+
+/* Education section start here */
+
+.education-section{
+    background-color: aqua;
+    z-index: -1;
+    margin-top: 80px;
+    margin-inline: 40px;
+    @media ( width <= 768px) {
+        /* margin-top: -300px; */
+    }
+ }
+ .My-Education{
+    padding-top: 50px;
+    padding-inline: 80px;
+    @media ( width <= 768px) {
+        /* padding-top: 450px; */
+        padding-inline: 20px;
+    }
+ }
+.edu-head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    @media ( width <= 768px) {
+        font-size: 30px;
+    }
+}
+hr{
+    border: solid 1px rgb(0, 153, 255);
+    margin-inline: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    @media ( width <= 768px) {
+        margin-inline: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+.edu-major{
+    display: flex;
+    padding-bottom: 80px;
+    @media ( width <= 768px) {
+        display: block;
+    }
+}
+.edu-major-left{
+    width: 35%;
+    @media ( width <= 768px) {
+        width: 100%;
+    }
+}
+.edu-major-right{
+    width: 55%;
+    @media ( width <= 768px) {
+        width: 100%;
+    }
+}
+h1{
+    margin-bottom: 25px;
+}
+h3{
+    margin-bottom: 25px;
+    font-weight: bolder;
+    @media ( width <= 768px) {
+        margin-top: 15px;
+    }
+}
+.edu-location{
     margin-top: 25px;
     font-size: 17px;
     font-weight: bold;
