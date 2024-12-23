@@ -248,7 +248,7 @@ hr{
     margin-top: 70px;
     margin-bottom: 70px;
     @media ( width <= 768px) {
-        margin-inline: 20px;
+        margin-inline: 0px;
     }
 }
 .exp-major{
