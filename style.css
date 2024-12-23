@@ -25,7 +25,7 @@ ul.links.close {
     }
 }
 
-/* Navbar section */
+/* Navbar section start*/
 
 nav{
     overflow: hidden;
@@ -47,15 +47,9 @@ nav > .nav-logo a{
     cursor: pointer;
     @media (width <= 768px) {
         position: relative;
-        right: 70px;
+        left: -20px;
     }
 }
-
-/* nav > .nav-links{
-    position: relative;
-    height: 200px;
-    background-color: black;
-} */
 
 nav > .nav-links > .open-btn{
     display: none;
@@ -112,26 +106,27 @@ nav > .nav-links ul.links li.close-btn{
 
 /* Navbar section end here */
 
-/* section hero start here */
+/* hero section start here */
 .hero{
     padding-inline: 80px;
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
     @media( width <= 768px) {
-        padding-left: 10px; 
         display: block;
+        position: relative;
+        left: -20px;
     }
 }
 .hero-image{
     height: 35rem;
     width: 25rem;
     margin-right: 10px;
-    border-radius: 25%;
+    border-radius: 15%;
     margin-top: 40px;
     @media( width <= 768px) {
-        height: 35rem;
-        width: 20rem;
+        height: 30rem;
+        width: 15rem;
     }
 }
 .hero-text{
@@ -139,6 +134,9 @@ nav > .nav-links ul.links li.close-btn{
 }
 .hero-name{
     font-size: 5rem;
+    @media (width <= 768px) {
+        font-size: 3rem;
+    }
 }
 .hero-skill{
     font-size: 30px;
@@ -158,14 +156,14 @@ nav > .nav-links ul.links li.close-btn{
 .hero-last-text{
     margin-top: 40px;
 }
+
+/* hero section ends here */
+
+/* work section start here */
 .work{
     text-align: center;   
     margin-top: 15%;
     color: white;
-    @media( width <= 768px) {
-        /* position: relative;
-        right: 20px; */
-    }
 }
 .sub-work{
     display: flex;
@@ -196,25 +194,83 @@ nav > .nav-links ul.links li.close-btn{
 .work-skill{
     background-color: rgb(0, 153, 255);
     padding: 25px 30px 25px 30px;
-    border-radius: 30px; 
-    /* @media( width <= 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }   */
+    border-radius: 30px;
 }
 .skill-name{
     font-size: 30px;
+    width: 60px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    /* @media( width <= 768px){
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
 }
 .skill-text{
     margin-top: 20px;
     font-size: 25px;
+    @media( width <= 768px){
+        font-size: 16px;
+    }
 }
 section > .heading{
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color: black;
     text-align: center;
+    @media( width <= 768px){
+        font-size: 30px;
+    }
+}
+ /* work section ends here */
+
+ /* work experience section start here */
+
+ .work-experience{
+    margin-top: 120px;
+    padding-inline: 80px;
+ }
+.exp-head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+hr{
+    border: solid 1px rgb(0, 153, 255);
+    margin-inline: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.exp-major{
+    display: flex;
+    padding-bottom: 80px;
+}
+.exp-major-left{
+    width: 30%;
+}
+.exp-major-right{
+    width: 60%;
+}
+h1{
+    margin-bottom: 25px;
+}
+h3{
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+.exp-location{
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+}
+.date{
+    font-size: 18px;
+}
+.exp-text{
+    font-size: 20px;
 }
