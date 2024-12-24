@@ -230,7 +230,7 @@ section > .heading{
  /* work experience section start here */
 
  .work-exp-bg{
-    background-color: rgb(225, 231, 239);
+    background-color: rgb(227, 230, 247);
     z-index: -1;
     margin-top: -100px;
     margin-inline: 40px;
@@ -406,7 +406,7 @@ span{
 /* Education section start here */
 
 .education-section{
-    background-color: rgb(225, 231, 239);
+    background-color: rgb(227, 230, 247);
     z-index: -1;
     margin-top: 80px;
     margin-inline: 40px;
@@ -553,6 +553,7 @@ span{
 }
 .contact-number{
     padding-bottom: 50px;
+    color: rgb(0, 153, 255);
 }
 .fa-phone{
     padding-right: 10px;
