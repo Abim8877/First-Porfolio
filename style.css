@@ -230,19 +230,19 @@ section > .heading{
  /* work experience section start here */
 
  .work-exp-bg{
-    background-color: aqua;
+    background-color: rgb(225, 231, 239);
     z-index: -1;
     margin-top: -100px;
     margin-inline: 40px;
     @media ( width <= 768px) {
-        margin-top: -300px;
+        margin-top: -400px;
     }
  }
  .work-experience{
     padding-top: 210px;
     padding-inline: 80px;
     @media ( width <= 768px) {
-        padding-top: 450px;
+        padding-top: 500px;
         padding-inline: 20px;
     }
  }
@@ -357,6 +357,7 @@ span{
     border: none;
     background-color: rgb(0, 153, 255);
     margin-top: 25px;
+    color: white;
 }
 .exp-time-rate{
     width: 55%;
@@ -405,7 +406,7 @@ span{
 /* Education section start here */
 
 .education-section{
-    background-color: aqua;
+    background-color: rgb(225, 231, 239);
     z-index: -1;
     margin-top: 80px;
     margin-inline: 40px;
@@ -546,13 +547,20 @@ span{
 }
 .hr-second{
     margin-bottom: 15px;
-    border: solid 1px rgb(0, 153, 255);
 }
 .contact-number-text{
     padding-bottom: 15px;
 }
 .contact-number{
     padding-bottom: 50px;
+}
+.fa-phone{
+    padding-right: 10px;
+    color: rgb(0, 153, 255);
+}
+.fa-envelope{
+    padding-right: 10px;
+    color: rgb(0, 153, 255);
 }
 
 /* contact section ends here */
@@ -607,6 +615,7 @@ span{
 }
 .touch-text{
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 .touch-btn{
     border: none;
