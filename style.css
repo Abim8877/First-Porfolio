@@ -160,24 +160,28 @@ nav > .nav-links ul.links li.close-btn{
 /* hero section ends here */
 
 /* work section start here */
+/* Ensure the layout responds properly */
 .sub-work {
     display: flex;
     justify-content: space-between;
-    padding-inline: 80px;
     gap: 15px;
     margin-top: 50px;
     flex-wrap: wrap; /* Allow items to wrap on small screens */
+    padding-inline: 80px;
 }
 
 .work-skill {
     background-color: rgb(0, 153, 255);
     padding: 25px 30px;
     border-radius: 30px;
-    width: 22%; /* Ensure that each skill has a consistent width */
+    width: 22%; /* Keep a consistent width for each skill */
     margin-bottom: 20px;
-    text-align: center; /* Ensure text is centered in each box */
-    flex: 1;
+    text-align: center;
     color: white;
+    flex: 1;
+    min-width: 220px; /* Minimum width to ensure wrapping */
+    box-sizing: border-box;
+    /* Ensure the content stays within bounds */
 }
 
 .work-skill i {
@@ -196,6 +200,7 @@ nav > .nav-links ul.links li.close-btn{
     margin-top: 10px;
 }
 
+/* Media Queries for small screens */
 @media (max-width: 768px) {
     .sub-work {
         padding-inline: 20px;
@@ -216,6 +221,7 @@ nav > .nav-links ul.links li.close-btn{
         font-size: 14px;
     }
 }
+
 
  /* work section ends here */
 
