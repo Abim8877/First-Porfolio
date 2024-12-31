@@ -112,7 +112,7 @@ nav > .nav-links ul.links li.close-btn{
     padding-inline: 80px;
     display: flex;
     justify-content: space-between;
-    padding-top: 70px;
+    padding-top: 50px;
     @media( width <= 768px) {
         display: block;
         position: relative;
@@ -121,9 +121,11 @@ nav > .nav-links ul.links li.close-btn{
 }
 .hero-image{
     height: 35rem;
-    width: 25rem;
-    margin-right: 10px;
+    background-color: aqua;
+    width: 30rem;
+    margin-right: 40px;
     border-radius: 15%;
+    margin-bottom: 150px;
     margin-top: 40px;
     @media( width <= 768px) {
         height: 30rem;
